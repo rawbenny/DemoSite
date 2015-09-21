@@ -36,7 +36,7 @@
         </artifact:mvn>
     </target>
 
-    <target name="tomcat" depends="start-db">
+    <target name="tomcat">
         <delete dir="war/WEB-INF/lib"/>
         <artifact:mvn mavenHome="${maven.home}" fork="true">
             <jvmarg value="-Xmx512M" />
